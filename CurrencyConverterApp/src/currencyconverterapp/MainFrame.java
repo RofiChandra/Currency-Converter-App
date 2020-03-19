@@ -59,7 +59,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel4.setText("Euro ");
 
         jLabel5.setFont(new java.awt.Font("Lucida Sans Unicode", 2, 12)); // NOI18N
-        jLabel5.setText("Yen Jepang ");
+        jLabel5.setText("Japanese Yen");
 
         btn_convert.setBackground(new java.awt.Color(51, 102, 255));
         btn_convert.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -76,7 +76,7 @@ public class MainFrame extends javax.swing.JFrame {
         bg_backgroundLayout.setHorizontalGroup(
             bg_backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bg_backgroundLayout.createSequentialGroup()
-                .addGap(74, 74, 74)
+                .addGap(68, 68, 68)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
