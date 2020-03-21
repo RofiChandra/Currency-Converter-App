@@ -13,18 +13,31 @@ import currencyconverterapp.Model.ModelProgram;
  */
 public class Logic {
     float returnRupiah(ModelProgram modelProgram){
-        return modelProgram.getRupiah();
-    }
-    
-    float returnDollar(ModelProgram modelProgram){
-        return modelProgram.getDollar();
-    }
-    
-    float returnEuro(ModelProgram modelProgram){
-        return modelProgram.getEuro();
-    }
-    
-    float returnYen(ModelProgram modelProgram){
-        return modelProgram.getYen();
-    }
+		
+		return modelProgram.getRupiah();
+	}
+	
+	float returnDollar(ModelProgram modelProgram){
+		return modelProgram.getDollar();
+	}
+	
+	float returnEuro(ModelProgram modelProgram){
+		return modelProgram.getEuro();
+	}
+	
+	float returnYen(ModelProgram modelProgram){
+		return modelProgram.getYen();
+	}
+	
+	float returnsisaDollar(ModelProgram modelProgram){
+		return modelProgram.getsisaDollar();
+	}
+	
+	float returnsisaEuro(ModelProgram modelProgram){
+		return modelProgram.getsisaEuro();
+	}
+	
+	float returnsisaYen(ModelProgram modelProgram){
+		return modelProgram.getsisaYen();
+	}
 }

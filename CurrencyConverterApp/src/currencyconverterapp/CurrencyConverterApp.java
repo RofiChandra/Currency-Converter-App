@@ -16,10 +16,13 @@ public class CurrencyConverterApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MainFrame frame = new MainFrame();
+        InputName frame = new InputName();
         frame.show();
         frame.setVisible(true);
         frame.setResizable(false);
+		
+		MainFrame converter = new MainFrame();
+		frame.setResizable(false);
     }
     
 }
