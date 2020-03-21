@@ -5,6 +5,7 @@
  */
 package currencyconverterapp.Function;
 
+import currencyconverterapp.MainFrame;
 import currencyconverterapp.Model.ModelProgram;
 
 /**
@@ -12,32 +13,31 @@ import currencyconverterapp.Model.ModelProgram;
  * @author DEYA, ROFI, CHRISTIAN
  */
 public class Logic {
-    float returnRupiah(ModelProgram modelProgram){
-		
-		return modelProgram.getRupiah();
+	public String returnRupiah (ModelProgram modelProgram, MainFrame mainFrame){
+		return "IDR " + modelProgram.getRupiah();
 	}
 	
-	float returnDollar(ModelProgram modelProgram){
-		return modelProgram.getDollar();
+	public String returnDollar (ModelProgram modelProgram, MainFrame mainFrame){
+		return "USD " + modelProgram.getDollar();
 	}
 	
-	float returnEuro(ModelProgram modelProgram){
-		return modelProgram.getEuro();
+	public String returnEuro (ModelProgram modelProgram, MainFrame mainFrame){
+		return "EUR " + modelProgram.getEuro();
 	}
 	
-	float returnYen(ModelProgram modelProgram){
-		return modelProgram.getYen();
+	public String returnYen (ModelProgram modelProgram, MainFrame mainFrame){
+		return "JPY " + modelProgram.getYen();
 	}
 	
-	float returnsisaDollar(ModelProgram modelProgram){
-		return modelProgram.getsisaDollar();
+	public String returnsisaDollar (ModelProgram modelProgram, MainFrame mainFrame){
+		return "Rp. " + modelProgram.getsisaDollar();
 	}
 	
-	float returnsisaEuro(ModelProgram modelProgram){
-		return modelProgram.getsisaEuro();
+	public String returnsisaEuro (ModelProgram modelProgram, MainFrame mainFrame){
+		return "Rp. " + modelProgram.getsisaEuro();
 	}
 	
-	float returnsisaYen(ModelProgram modelProgram){
-		return modelProgram.getsisaYen();
+	public String returnsisaYen (ModelProgram modelProgram, MainFrame mainFrame){
+		return "Rp. " + modelProgram.getsisaYen();
 	}
 }

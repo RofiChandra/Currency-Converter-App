@@ -5,6 +5,8 @@
  */
 package currencyconverterapp.Model;
 
+import currencyconverterapp.MainFrame;
+
 /**
  *
  * @author DEYA, ROFI, CHRISTIAN
@@ -13,7 +15,8 @@ public class ModelProgram {
 
 	float rupiah, dollar, euro, yen, sisaDollar, sisaEuro, sisaYen;
 
-	public void setRupiah(float rupiah) {
+	public void setRupiah(float rupiah, ModelProgram modelProgram, MainFrame mainFrame) {
+		float returnRupiah = Float.parseFloat(mainFrame.tf_rupiah.getText());
 		this.rupiah = rupiah;
 	}
 
@@ -21,7 +24,9 @@ public class ModelProgram {
 		return rupiah;
 	}
 
-	public void setDollar(float dollar) {
+	public void setDollar(float dollar, ModelProgram modelProgram, MainFrame mainFrame) {
+		float returnDollar = Float.parseFloat(mainFrame.tf_dollar.getText());
+		float hitungdollar = (float) (rupiah * 0.000063);
 		this.dollar = dollar;
 	}
 
@@ -29,7 +34,9 @@ public class ModelProgram {
 		return dollar;
 	}
 
-	public void setEuro(float euro) {
+	public void setEuro(float euro, ModelProgram modelProgram, MainFrame mainFrame) {
+		float returnEuro = Float.parseFloat(mainFrame.tf_euro.getText());
+		float hitungeuro = (float) (rupiah * 0.000059);
 		this.euro = euro;
 	}
 
@@ -37,7 +44,9 @@ public class ModelProgram {
 		return euro;
 	}
 
-	public void setYen(float yen) {
+	public void setYen(float yen, ModelProgram modelProgram, MainFrame mainFrame) {
+		float returnYen = Float.parseFloat(mainFrame.tf_yen.getText());
+		float hitungyen = (float) (rupiah * 0.0069);
 		this.yen = yen;
 	}
 
@@ -45,7 +54,8 @@ public class ModelProgram {
 		return yen;
 	}
 
-	public void setsisaDollar(float sisaDollar) {
+	public void setsisaDollar(float sisaDollar, ModelProgram modelProgram, MainFrame mainFrame) {
+		//BELUM DIBUAT DI MAINFRAME
 		this.sisaDollar = sisaDollar;
 	}
 
@@ -53,7 +63,8 @@ public class ModelProgram {
 		return sisaDollar;
 	}
 
-	public void setsisaEuro(float sisaEuro) {
+	public void setsisaEuro(float sisaEuro, ModelProgram modelProgram, MainFrame mainFrame) {
+		//BELUM DIBUAT DI MAINFRAME
 		this.sisaEuro = sisaEuro;
 	}
 
@@ -61,7 +72,8 @@ public class ModelProgram {
 		return sisaEuro;
 	}
 
-	public void setsisaYen(float sisaYen) {
+	public void setsisaYen(float sisaYen, ModelProgram modelProgram, MainFrame mainFrame) {
+		//BELUM DIBUAT DI MAINFRAME
 		this.sisaYen = sisaYen;
 	}
 

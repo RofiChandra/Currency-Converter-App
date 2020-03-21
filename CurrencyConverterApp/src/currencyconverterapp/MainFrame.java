@@ -1,5 +1,7 @@
 package currencyconverterapp;
 
+import currencyconverterapp.Function.Logic;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +13,7 @@ package currencyconverterapp;
  * @author user
  */
 public class MainFrame extends javax.swing.JFrame{
-    float rupiah, dollar, euro, yen;
+    Logic logic = new Logic();
     /**
      * Creates new form MainFrame
      */
@@ -210,7 +212,7 @@ public class MainFrame extends javax.swing.JFrame{
 
     private void btn_convertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_convertActionPerformed
         // TODO add your handling code here:
-        float rupiah = Integer.parseInt(tf_rupiah.getText());
+        float rupiah = Float.parseFloat(tf_rupiah.getText());
 		
 		float dollar = (float) (rupiah * 0.000063);
 		float euro = (float) (rupiah * 0.000059);
@@ -227,6 +229,7 @@ public class MainFrame extends javax.swing.JFrame{
 
     private void btn_quitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_quitActionPerformed
         // TODO add your handling code here:
+		// BELUM BISA INPUT NAME
 		dispose();
     }//GEN-LAST:event_btn_quitActionPerformed
 
@@ -278,9 +281,9 @@ public class MainFrame extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel label_result;
-    private javax.swing.JTextField tf_dollar;
-    private javax.swing.JTextField tf_euro;
-    private javax.swing.JTextField tf_rupiah;
-    private javax.swing.JTextField tf_yen;
+    public javax.swing.JTextField tf_dollar;
+    public javax.swing.JTextField tf_euro;
+    public javax.swing.JTextField tf_rupiah;
+    public javax.swing.JTextField tf_yen;
     // End of variables declaration//GEN-END:variables
 }

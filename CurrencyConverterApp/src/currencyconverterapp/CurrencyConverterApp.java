@@ -20,9 +20,6 @@ public class CurrencyConverterApp {
         frame.show();
         frame.setVisible(true);
         frame.setResizable(false);
-		
-		MainFrame converter = new MainFrame();
-		frame.setResizable(false);
     }
     
 }
