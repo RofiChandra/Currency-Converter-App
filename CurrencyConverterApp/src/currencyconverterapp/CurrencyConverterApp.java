@@ -11,15 +11,15 @@ package currencyconverterapp;
  */
 public class CurrencyConverterApp {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        InputName frame = new InputName();
-        frame.show();
-        frame.setVisible(true);
-        frame.setResizable(false);
-    }
-    
+	/**
+	 * @param args the command line arguments
+	 */
+	public static void main(String[] args) {
+		// TODO code application logic here
+		InputName frame = new InputName();
+		frame.show();
+		frame.setVisible(true);
+		frame.setResizable(false);
+	}
+
 }

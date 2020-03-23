@@ -5,17 +5,26 @@
  */
 package currencyconverterapp;
 
+import currencyconverterapp.Function.Logic;
+import static java.awt.image.ImageObserver.HEIGHT;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author user
  */
 public class InputName extends javax.swing.JFrame {
 
+	public String name;
+	Logic logic = new Logic();
+
 	/**
 	 * Creates new form LoginRegister
 	 */
 	public InputName() {
 		initComponents();
+		// Baris kode ini yang membuat JFrame tampil di tengah layar
+		setLocationRelativeTo(this);
 	}
 
 	/**
@@ -112,10 +121,21 @@ public class InputName extends javax.swing.JFrame {
 
     private void tf_masukanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_masukanActionPerformed
 		// TODO add your handling code here:
-		MainFrame main = new MainFrame();
-		main.setVisible(true);
-		main.setResizable(true);
-		dispose();
+		String name = tf_name.getText();
+		Boolean check_name = logic.checkName(name);
+
+		if (!check_name) {
+			JOptionPane.showMessageDialog(rootPane,
+					 "Please input alphanumeric name only!",
+					 "Message", HEIGHT);
+			tf_name.setText("");
+		} else {
+			JOptionPane.showMessageDialog(rootPane, "Login success");
+			MainFrame main = new MainFrame();
+			main.setVisible(true);
+			main.setResizable(true);
+			dispose();
+		}
     }//GEN-LAST:event_tf_masukanActionPerformed
 
 	/**
