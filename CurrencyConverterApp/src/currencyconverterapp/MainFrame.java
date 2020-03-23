@@ -24,6 +24,14 @@ public class MainFrame extends javax.swing.JFrame {
 		// Baris kode ini yang membuat JFrame tampil di tengah layar
 		setLocationRelativeTo(this);
 	}
+	    
+	String nama;
+   	public MainFrame(String nama) {
+        initComponents();
+        this.nama = nama;
+        label_result.setText("Hallo, " + this.nama);
+        }
+    
 
 	MainFrame(String text) {
 		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
